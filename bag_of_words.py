@@ -18,7 +18,6 @@ print(count.vocabulary_)		#this returns a directory
 #to print the feature vectors
 print(bag.toarray())
 
-
 """
 Implementing term frequency-inverse document frequency
 
@@ -32,7 +31,6 @@ Implementing term frequency-inverse document frequency
 	====> Basically as the number of occurrences of a word increases, its value in giving meaningful information decreases
 
 """
-
 tfidf = TfidfTransformer()
 np.set_printoptions(precision=2)
 print(tfidf.fit_transform(count.fit_transform(docs)).toarray())
